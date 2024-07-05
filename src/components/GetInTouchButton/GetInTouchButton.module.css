@@ -1,0 +1,31 @@
+.button {
+  background-color: var(--get-in-touch-button-bg-color);
+  color: var(--color-dark-green);
+
+  min-width: 140px;
+
+  padding: 10px 16px;
+
+  border-radius: 500px;
+
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-align: left;
+
+  position: relative;
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 12.5px;
+    right: 16px;
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-dark-green);
+  }
+}
