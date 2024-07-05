@@ -9,8 +9,21 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Oswald', sans-serif;
+}
+
+p,
+span {
+  line-height: 1.2;
+  letter-spacing: -0.04em;
 }
 
 ul,
@@ -32,11 +45,17 @@ button {
 
   border: none;
   cursor: pointer;
+
+  color: inherit;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+address {
+  font-style: normal;
 }
 
 html,
@@ -49,8 +68,10 @@ body {
   flex-direction: column;
 
   font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
 
-  background-color: #f5f6fb;
+  background-color: var(--body-bg-color);
+  color: var(--color-dark-green);
 }
 
 #root {
@@ -68,12 +89,13 @@ main {
   --transition-options: 250ms ease-in-out;
 
   --color-light-green: #dbf0d9;
-  --color-green: #96d18c;
+  --color-green: #97d28b;
   --color-dark-green: #173d33;
   --color-white: #ffffff;
   --color-black: #000000;
+
+  --body-bg-color: #f3f5fa;
   --burger-menu-icon-color: #292d32;
-  --get-in-touch-button-bg-color: #97d28b;
 }
 
 .visually-hidden {
