@@ -8,8 +8,18 @@ interface GetInTouchButtonProps {
 }
 
 const GetInTouchButton = ({ customClassName, className }: GetInTouchButtonProps) => {
+  const handleOnClick = () => {
+    document.getElementById('contact-us')!.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <button className={customClassName ?? clsx(className, s.button)}>Get in touch</button>
+    <a
+      className={customClassName ?? clsx(className, s.button)}
+      href="#contact-us"
+      onClick={handleOnClick}
+    >
+      Get in touch
+    </a>
   );
 };
 

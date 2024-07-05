@@ -1,6 +1,5 @@
 .button {
-  background-color: var(--get-in-touch-button-bg-color);
-  color: var(--color-dark-green);
+  background-color: var(--color-green);
 
   min-width: 140px;
 
@@ -8,7 +7,6 @@
 
   border-radius: 500px;
 
-  font-size: 16px;
   line-height: 1.2;
   letter-spacing: -0.04em;
   text-align: left;
@@ -18,8 +16,10 @@
     content: '';
 
     position: absolute;
-    top: 12.5px;
+    top: 50%;
     right: 16px;
+
+    transform: translateY(-50%);
 
     width: 14px;
     height: 14px;
