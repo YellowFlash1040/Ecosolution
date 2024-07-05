@@ -1,0 +1,21 @@
+.header {
+  padding-top: 36px;
+  margin-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonsContainer {
+  display: flex;
+  column-gap: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+  .getInTouchButton {
+    display: none;
+  }
+}
