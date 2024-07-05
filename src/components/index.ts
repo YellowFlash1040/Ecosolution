@@ -5,3 +5,5 @@ export { default as Header } from './Header/Header';
 export { default as Logo } from './Logo/Logo';
 export { default as BurgerMenuButton } from './BurgerMenuButton/BurgerMenuButton';
 export { default as GetInTouchButton } from './GetInTouchButton/GetInTouchButton';
+export { default as LearnMoreButton } from './LearnMoreButton/LearnMoreButton';
+export { default as Main } from './Main/Main';
