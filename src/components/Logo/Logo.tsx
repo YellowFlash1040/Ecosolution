@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { LogoIcon } from '../../assets';
 
 interface LogoProps {
@@ -5,7 +7,11 @@ interface LogoProps {
 }
 
 const Logo = ({ className }: LogoProps) => {
-  return <LogoIcon className={className} width={269} height={40}></LogoIcon>;
+  return (
+    <Link className={className} to={'/'}>
+      <LogoIcon width={269} height={40}></LogoIcon>
+    </Link>
+  );
 };
 
 export default Logo;
