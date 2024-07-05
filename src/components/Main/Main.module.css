@@ -1,0 +1,159 @@
+.section {
+  padding-top: 46px;
+}
+
+.sectionTopContainer {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 24px;
+
+  margin-bottom: 24px;
+
+  position: relative;
+  &::before {
+    content: '';
+
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--color-green);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionTopContainer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sectionTopContainer {
+    padding-right: 96px;
+    margin-bottom: 12px;
+  }
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+
+  max-width: 320px;
+
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .title {
+    font-size: 64px;
+    max-width: 485px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .descriptionAndButtoncontainer {
+    max-width: 342px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .descriptionAndButtoncontainer {
+    max-width: 363px;
+  }
+}
+
+.description {
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .description {
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .description {
+    margin-bottom: 43px;
+  }
+}
+
+.learnMoreButton {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .learnMoreButton {
+    margin: 0;
+  }
+}
+
+.contactsContainer {
+  margin-bottom: 36px;
+}
+
+.contactsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .contactsList {
+    justify-content: center;
+  }
+}
+
+.contactItem {
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  .contactItem:last-child {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contactItem:nth-child(1) {
+    margin-right: 77px;
+  }
+
+  .contactItem:nth-child(2) {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .contactItem:nth-child(1) {
+    margin-right: 492px;
+  }
+
+  .contactItem:nth-child(2) {
+    margin-right: 167px;
+  }
+}
+
+.image {
+  margin: 0 auto;
+}
