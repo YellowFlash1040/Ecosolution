@@ -10,7 +10,7 @@ interface BurgerMenuButtonProps {
 
 const BurgerMenuButton = ({ customClassName, className }: BurgerMenuButtonProps) => {
   return (
-    <button className={customClassName ?? clsx(s.button, className)}>
+    <button className={customClassName ?? clsx(s.button, className)} type="button">
       <BurgerMenuIcon width={16} height={16} />
     </button>
   );
