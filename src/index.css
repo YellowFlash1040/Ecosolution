@@ -1,3 +1,5 @@
+@import url('./assets/fonts/fonts.css');
+
 h1,
 h2,
 h3,
@@ -44,7 +46,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 
   background-color: #f5f6fb;
 }

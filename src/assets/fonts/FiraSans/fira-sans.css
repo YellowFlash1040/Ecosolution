@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Fira Sans'), url('./FiraSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans'), url('./FiraSans-Regular.ttf') format('truetype');
+}
