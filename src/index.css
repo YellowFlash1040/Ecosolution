@@ -64,6 +64,14 @@ main {
 
 :root {
   --transition-options: 250ms ease-in-out;
+
+  --color-light-green: #dbf0d9;
+  --color-green: #96d18c;
+  --color-dark-green: #173d33;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --burger-menu-icon-color: #292d32;
+  --get-in-touch-button-bg-color: #97d28b;
 }
 
 .visually-hidden {
