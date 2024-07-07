@@ -18,7 +18,8 @@
   align-items: center;
   column-gap: 12px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-dark-green);
     color: var(--color-green);
 
