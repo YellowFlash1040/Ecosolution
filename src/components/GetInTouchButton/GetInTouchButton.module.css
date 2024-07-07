@@ -1,6 +1,8 @@
 .button {
   background-color: var(--color-green);
 
+  transition: background-color var(--transition-options), color var(--transition-options);
+
   min-width: 140px;
 
   padding: 10px 16px;
@@ -11,21 +13,39 @@
   letter-spacing: -0.04em;
   text-align: left;
 
-  position: relative;
-  &::after {
-    content: '';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 12px;
 
+  &:hover {
+    background-color: var(--color-dark-green);
+    color: var(--color-green);
+
+    .arrowIcon {
+      background-color: var(--color-green);
+      stroke: var(--color-dark-green);
+    }
+  }
+}
+
+.arrowIcon {
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+
+  background-color: var(--color-dark-green);
+  stroke: transparent;
+
+  transition: background-color var(--transition-options), stroke var(--transition-options);
+
+  position: relative;
+  & > svg {
     position: absolute;
     top: 50%;
-    right: 16px;
+    left: 50%;
 
-    transform: translateY(-50%);
-
-    width: 14px;
-    height: 14px;
-
-    border-radius: 50%;
-
-    background-color: var(--color-dark-green);
+    transform: translate(-50%, -50%) rotate(90deg);
   }
 }
