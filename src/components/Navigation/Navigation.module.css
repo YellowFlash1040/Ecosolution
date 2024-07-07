@@ -1,0 +1,42 @@
+.pagesList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.pageItem {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+
+  height: 29px;
+}
+
+.page {
+  width: 100%;
+
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+
+  color: var(--color-white);
+  stroke: var(--color-white);
+
+  transition: color var(--transition-options), stroke var(--transition-options);
+
+  &:hover,
+  &:focus {
+    color: var(--color-green);
+    stroke: var(--color-green);
+  }
+
+  & > svg {
+    transform: rotate(-45deg);
+  }
+}
+
+.activePage {
+  color: var(--color-green);
+  stroke: var(--color-green);
+}
