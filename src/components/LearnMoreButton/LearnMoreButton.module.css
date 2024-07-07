@@ -1,7 +1,7 @@
 .button {
   background-color: transparent;
 
-  padding: 10.5px 16px;
+  padding: 2.5px 3px 2.5px 15px;
 
   min-width: 141px;
 
@@ -12,18 +12,25 @@
   letter-spacing: -0.04em;
   text-align: left;
 
-  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 12px;
+
+  transition: background-color var(--transition-options), color var(--transition-options),
+    border-color var(--transition-options);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-dark-green);
+    color: var(--color-green);
+    border-color: var(--color-dark-green);
+  }
 }
 
 .arrowIconContainer {
   background-color: var(--color-green);
   stroke: var(--color-dark-green);
-
-  position: absolute;
-  top: 50%;
-  right: 4px;
-
-  transform: translateY(-50%);
 
   width: 32px;
   height: 32px;
