@@ -11,7 +11,11 @@ interface GetInTouchButtonProps {
 
 const GetInTouchButton = ({ customClassName, className }: GetInTouchButtonProps) => {
   return (
-    <a className={customClassName ?? clsx(className, s.button)} href="#contact-us">
+    <a
+      className={customClassName ?? clsx(className, s.button)}
+      href="#contact-us"
+      onClick={(e) => e.currentTarget.blur()}
+    >
       Get in touch
       <div className={s.arrowIcon}>
         <ArrowIcon width={8} height={9} />
