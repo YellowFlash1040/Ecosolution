@@ -1,6 +1,6 @@
 .header {
   padding-top: 36px;
-  margin-bottom: 100px;
+  margin-bottom: 116px;
 }
 
 .container {
@@ -15,7 +15,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .getInTouchButton {
+  .buttonsContainer > .getInTouchButton {
     display: none;
   }
 }

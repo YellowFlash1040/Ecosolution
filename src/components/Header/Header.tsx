@@ -1,9 +1,4 @@
-import {
-  BurgerMenuButton,
-  GetInTouchButton,
-  Logo,
-  PageContainer
-} from '../../components';
+import { BurgerMenu, GetInTouchButton, Logo, PageContainer } from '../../components';
 
 import s from './Header.module.css';
 
@@ -13,7 +8,7 @@ const Header = () => {
       <PageContainer className={s.container}>
         <Logo />
         <div className={s.buttonsContainer}>
-          <BurgerMenuButton />
+          <BurgerMenu />
           <GetInTouchButton className={s.getInTouchButton} />
         </div>
       </PageContainer>
