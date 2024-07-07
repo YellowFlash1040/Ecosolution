@@ -7,3 +7,6 @@ export { default as BurgerMenuButton } from './BurgerMenuButton/BurgerMenuButton
 export { default as GetInTouchButton } from './GetInTouchButton/GetInTouchButton';
 export { default as LearnMoreButton } from './LearnMoreButton/LearnMoreButton';
 export { default as Main } from './Main/Main';
+export { default as Modal } from './Modal/Modal';
+export { default as Navigation } from './Navigation/Navigation';
+export { default as BurgerMenu } from './BurgerMenu/BurgerMenu';
