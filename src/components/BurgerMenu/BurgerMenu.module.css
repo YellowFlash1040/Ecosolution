@@ -1,0 +1,35 @@
+.modalContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+.socialMediaList {
+  display: flex;
+  column-gap: 8px;
+}
+
+.socialMedia {
+  display: flex;
+
+  stroke: var(--color-white);
+  fill: var(--color-white);
+
+  transition: stroke var(--transition-options), fill var(--transition-options);
+
+  &:hover,
+  &:focus {
+    stroke: var(--color-green);
+    fill: var(--color-green);
+  }
+
+  &:visited {
+    fill: var(--color-white);
+  }
+
+  &:visited:focus {
+    fill: var(--color-green);
+  }
+}
