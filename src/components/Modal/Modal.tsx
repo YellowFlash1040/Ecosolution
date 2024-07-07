@@ -49,11 +49,9 @@ const Modal = ({ className, children, closeModal, isOpened }: ModalProps) => {
 
       document.body.style.paddingRight = `${scrollbarWidth}px`;
       document.body.style.overflow = 'hidden';
-      // document.getElementById('root')!.style.filter = 'blur(3px)';
     } else {
       document.body.style.paddingRight = '0';
       document.body.style.overflow = 'auto';
-      // document.getElementById('root')!.style.filter = 'none';
     }
   }, [isOpened]);
 
